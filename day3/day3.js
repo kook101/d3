@@ -1,20 +1,31 @@
-//d3 array
-//statistics, search, transformations, histograms, histogram threshholds
-//d3 dsv
-//declarative programming - 선언형 프로그래밍
-//Tell d3 what you want
+//d3 draw a bar chart
 
-//imperative programming - 명령형 프로그램
-//tell js how to do it
 
-//Data biding - array of numbers
+var dataSet = [80,100, 56, 120, 180, 30, 40, 120, 160];
+console.log(dataSet);
+var svgWidth = 500, svgHeight = 300, barPadding = 5;
+var barWidth = (svgWidth / dataSet.length);
+console.log(barWidth);
+var svg = d3.select('svg')
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
 
-var dataSet = [ 1, 2, 3, 4, 5];
+    console.log(svg);
 
-d3.select('body')
-    .selectAll('p')
+var barChart = svg.selectAll("rect")
     .data(dataSet)
     .enter()
-    .append('p')//append paragraph for each data element
-    // .text('D3 Day2!');
-    .text(function(d){return d;});
+    .append("rect")
+    .attr("y", function(d) {
+        return svgHeight - d;
+    })
+    .attr("height", function(d) {
+        return d;
+    })
+    .attr("width", barWidth - barPadding)
+    .attr("transform", function (d, i){
+        var translate = [barWidth * i, 0];
+        return "translate("+ translate +")";
+    });
+
+    console.log(barChart);
