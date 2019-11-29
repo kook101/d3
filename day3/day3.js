@@ -1,4 +1,5 @@
 //d3 draw a bar chart
+//tutorial from https://scrimba.com/g/gd3js
 
 
 var dataSet = [80,100, 56, 120, 180, 30, 40, 120, 160];

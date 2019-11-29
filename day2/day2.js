@@ -1,3 +1,4 @@
+////tutorial from https://scrimba.com/g/gd3js
 //d3 array
 //statistics, search, transformations, histograms, histogram threshholds
 //d3 dsv
