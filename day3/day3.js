@@ -1,4 +1,5 @@
-//d3 draw a bar chart
+//Day3
+//Bar-chart
 //tutorial from https://scrimba.com/g/gd3js
 
 
