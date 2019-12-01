@@ -1,3 +1,5 @@
+//Day2
+//Selection and manipulation
 ////tutorial from https://scrimba.com/g/gd3js
 //d3 array
 //statistics, search, transformations, histograms, histogram threshholds
