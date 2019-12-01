@@ -1,3 +1,5 @@
+// Day1
+// Introduction
 // tutorial from https://scrimba.com/g/gd3js
 //d3 DOM selector
 d3.select('h1').style('color','red')
